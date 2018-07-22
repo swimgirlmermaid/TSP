@@ -1,0 +1,22 @@
+# Folders and Mac related files 
+.DS_Store
+*.DS_Store
+app/captures/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+

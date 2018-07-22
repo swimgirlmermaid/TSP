@@ -1,0 +1,2 @@
+2018-07-22 10:16:43,226 - ERROR --: [31mError reading CSV  data/data_4.csv  file... 'utf-8' codec can't decode byte 0xc8 in position 14: invalid continuation byte[0m
+2018-07-22 10:17:20,124 - ERROR --: [31mError reading CSV  data/data_4.csv  file... could not convert string to float: [0m
