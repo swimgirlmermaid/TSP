@@ -10,4 +10,4 @@ def runCode():
     T = graph_tsp(var)
 
 t1 = Timer("""runCode()""", """from __main__ import runCode""")
-print("Time to Run Application (seconds): " '{0:.1f}'.format(t1.timeit(1)))  
+print("Time for Completion (seconds): " '{0:.1f}'.format(t1.timeit(1)))  
