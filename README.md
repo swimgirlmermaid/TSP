@@ -42,17 +42,21 @@ python3 Main.py
 **Example:** 
 
 ```
-$ python3 Main.py
-Enter filename (with no extension): data_0
+Roses-MBP-2:TSP Rosie$ python3 Main.py 
+Enter filename (with no extension): data_3
 ```
+
+The first image that appears is the data in its original order. 
+
+![original tour result](/images/original.jpg)
 
 The following image will appear as the graphed tour route. Once closed the progarm will finish by printing the route and calculated distance on screen. 
 
 ![sample tour result](/images/sample.jpg)
 
 ```
-Route: ([43.0, 25.0], [23.0, 3.0], [16.0, 22.s0]) 
-Minimum distance: 47.4
+Route: ([43.0, 25.0], [23.0, 3.0], [22.0, 3.0], [25.0, 3.0], [37.0, 18.0], [18.0, 18.0], [47.0, 24.0], [30.0, 10.0], [16.0, 22.0], [22.0, 19.0], [29.0, 21.0], [29.0, 9.0], [0.0, 7.0], [6.0, 23.0], [30.0, 24.0], [21.0, 18.0], [27.0, 10.0], [9.0, 21.0], [19.0, 19.0], [5.0, 9.0], [31.0, 2.0], [17.0, 27.0], [9.0, 10.0], [21.0, 24.0], [19.0, 16.0], [20.0, 16.0], [19.0, 9.0], [10.0, 10.0], [19.0, 22.0], [42.0, 30.0], [34.0, 7.0], [18.0, 13.0], [42.0, 20.0], [17.0, 40.0], [0.0, 10.0], [40.0, 30.0], [40.0, 19.0], [32.0, 20.0], [46.0, 22.0], [44.0, 31.0], [36.0, 15.0], [21.0, 27.0], [4.0, 29.0], [41.0, 27.0], [1.0, 19.0], [29.0, 25.0], [37.0, 17.0], [45.0, 23.0]) 
+Minimum distance: 210.9
 ```
 
 ### Application Logs 

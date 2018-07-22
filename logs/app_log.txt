@@ -1,2 +1,10 @@
 2018-07-22 10:16:43,226 - ERROR --: [31mError reading CSV  data/data_4.csv  file... 'utf-8' codec can't decode byte 0xc8 in position 14: invalid continuation byte[0m
 2018-07-22 10:17:20,124 - ERROR --: [31mError reading CSV  data/data_4.csv  file... could not convert string to float: [0m
+2018-07-22 10:51:35,823 - ERROR --: [31mError reading CSV  data/data_2.csv  file... name 'tour' is not defined[0m
+2018-07-22 11:05:39,052 - ERROR --: [31mError plotting route. Check data provided and/or graph settings... list index out of range[0m
+2018-07-22 11:06:57,289 - ERROR --: [31mError plotting route. Check data provided and/or graph settings... list index out of range[0m
+2018-07-22 11:09:59,859 - ERROR --: [31mError plotting route. Check data provided and/or graph settings... list index out of range[0m
+2018-07-22 11:15:31,239 - ERROR --: [31mError reading CSV  data/data_0.csv  file... list index out of range[0m
+2018-07-22 11:16:02,206 - ERROR --: [31mError reading CSV  data/data_0.csv  file... list index out of range[0m
+2018-07-22 11:19:21,687 - ERROR --: [31mError reading CSV  data/data_0.csv  file... unsupported format string passed to method.__format__[0m
+2018-07-22 11:20:15,134 - ERROR --: [31mError reading CSV  data/data_1.csv  file... unsupported format string passed to method.__format__[0m

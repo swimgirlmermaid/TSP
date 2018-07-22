@@ -59,10 +59,15 @@ class graph_tsp():
                     point.append(float(values)) 
                 points.append(point) 
             
-            self.logger.info('CSV file data/' + self.filename + '.csv was read...')
+            # Show Plot for original data provided 
+            title = 'The TSP Original Data Route'
+            self.plotIt(points, title)
 
+            self.logger.info('CSV file data/' + self.filename + '.csv was read...')
+            
             # Print distance 
-            print("""Route: {} \nMinimum distance: {}""".format(
+            print("""Original Distance: {} \nRecommended Tour Route: {} \nMinimum distance: {}""".format(
+                '{0:.1f}'.format(self.total_distance(points)), 
                 tuple(points),
                 '{0:.1f}'.format(self.total_distance(self.calculate_TSP(points)))))
 
@@ -119,9 +124,10 @@ class graph_tsp():
         distance
             Calculated Euclidean distance of the two points.    
         """
+        
         complete = False 
         try:
-            distance = ( (point_one[0] - point_two[0]) ** 2 + (point_one[1] - point_two[1]) ** 2) ** 0.5
+            distance = ( (point_one[0] - point_two[0]) ** 2.0 + (point_one[1] - point_two[1]) ** 2.0) ** 0.5
             complete = True 
             return distance 
         except Exception as e: 
@@ -150,6 +156,7 @@ class graph_tsp():
         total_distance
             Calculated total distance between the points.    
         """  
+        # Determine if the function has been completed
         complete = False  
         try:      
             total_distance = sum([self.distance(p, points[value + 1]) for value, p in enumerate(points[:-1])])
@@ -178,6 +185,7 @@ class graph_tsp():
         tour: path  
             Shortest path found for all cities.  
         """
+        # Determine if the function has been completed
         complete = False 
         # Starting position 
         start_position = points[0]
@@ -198,8 +206,9 @@ class graph_tsp():
                 visit_list.remove(nearest_city)
             complete = True 
 
-            # Show Plot 
-            self.plotIt(tour)
+            # Show Plot for the evaluated min tour route order 
+            title = 'The TSP Calculated Minimum Route'
+            self.plotIt(tour, title)
 
             return tour
         except Exception as e: 
@@ -208,7 +217,7 @@ class graph_tsp():
             if complete: 
                 self.logger.info('Minimum distance between all points and path have been calculated...')
 
-    def plotIt(self, tour_points):
+    def plotIt(self, tour_points, title):
         """
         Summary line
         ----------
@@ -241,12 +250,12 @@ class graph_tsp():
             plt.plot(x, y, 'b--')
             plt.xlabel('Longitude (X)')
             plt.ylabel('Latitude (Y)')
-            plt.title('The TSP Calculated Minimum Route')
+            plt.title(title)
             plt.grid(True)
 
             # Plot TSP route 
             plt.show()
 
-            self.logger.info('Final plot created of route... ')
+            self.logger.info('Plot created of route... ')
         except Exception as e: 
-            self.logger.error(Fore.RED + 'Error plotting final route. Check data provided... %s' % str(e) + Style.RESET_ALL)
+            self.logger.error(Fore.RED + 'Error plotting route. Check data provided and/or graph settings... %s' % str(e) + Style.RESET_ALL)
