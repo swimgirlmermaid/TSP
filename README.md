@@ -80,6 +80,16 @@ INFO | 20
 DEBUG | 10
 NOTSET | 0
 
+### Help Docs 
+There are help docs avaliable using DocString. To access the help docs, follow the example below: 
+
+```
+python3 
+>>> import graph_tsp
+>>> help(graph_tsp)
+>>> help(graph_tsp.graph_tsp.total_distance)
+```
+
 ### Future Work 
 After completing this problem, some future work that could be done to further improve the output is: 
 1. Evaluating for lines that do not cross over one another. 

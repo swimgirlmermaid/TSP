@@ -5,6 +5,12 @@
 from timeit import Timer
 from graph_tsp import graph_tsp
 
+"""
+Summary line
+----------
+
+Runs the code for TSP graph and calculates run time for application.  
+"""
 def runCode():
     var = str(input("Enter filename (with no extension): "))
     T = graph_tsp(var)
